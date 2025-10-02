@@ -9,5 +9,5 @@ body {
 }
 
 .default-btn {
-  @apply hidden md:flex font-bold p-2 px-6 rounded-full text-white  bg-[#8e9867] cursor-pointer transition delay-200 duration-300 hover:bg-[#8d6959]
+  @apply  md:flex font-bold p-2 px-6 rounded-full text-white  bg-[#8e9867] cursor-pointer transition delay-200 duration-300 hover:bg-[#8d6959]
 }
