@@ -10,6 +10,7 @@ import { FaStarOfLife as Mental } from "react-icons/fa";
 import { VscWorkspaceTrusted as Trust } from "react-icons/vsc";
 import { FaHourglassStart } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
+import SecondSection from "../components/home/SecondSection";
 
 const facesImages = [
     {image: face1, id: 1}, 
@@ -80,7 +81,7 @@ const Home = () => {
           </div> 
 
             {/* first home section on lg screens*/} 
-            <div className="hidden md:grid grid-cols-3 gap-x-6 mt-24 items-start">
+            <div className="hidden lg:grid grid-cols-3 gap-x-6 mt-24 items-start">
              <div className="flex flex-col gap-5">
              <div className="flex items-center gap-5">
             <span className="bg-[#8d6959] inline-flex items-center gap-1 rounded-full py-1 px-3 text-white">
@@ -137,12 +138,14 @@ const Home = () => {
             className="object-cover rounded-xl h-96  w-full"
            />
            <h1 className="absolute top-10 right-16 text-lg bg-black/20 text-white inline-flex items-center gap-1 py-1 px-3 rounded-full font-bold">
-            <Renew color="#8d6959" size={25}/> Renew
+            <Renew color="white" size={30}/> Renew
             </h1>
            </div>
            </div>
-            </div>
+          </div>
 
+          {/* second home section */}  
+          <SecondSection/>
         </div>
     )
 }
