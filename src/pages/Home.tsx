@@ -11,6 +11,7 @@ import { VscWorkspaceTrusted as Trust } from "react-icons/vsc";
 import { FaHourglassStart } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
 import SecondSection from "../components/home/SecondSection";
+import Help from "../components/home/Help";
 
 const facesImages = [
     {image: face1, id: 1}, 
@@ -146,6 +147,9 @@ const Home = () => {
 
           {/* second home section */}  
           <SecondSection/>
+
+          {/* help component */}
+          <Help/>
         </div>
     )
 }

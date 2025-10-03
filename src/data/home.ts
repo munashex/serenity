@@ -1,6 +1,6 @@
 
 
-export const secondSectionData = [
+ const secondSectionData = [
     {
       id: 1,
       percentage: " 95%",
@@ -33,3 +33,6 @@ export const secondSectionData = [
     }
   ];
   
+  
+
+export  {secondSectionData}

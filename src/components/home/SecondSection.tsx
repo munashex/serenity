@@ -111,7 +111,7 @@ const SecondSection = () => {
           <div className="space-y-7">
             <div className="flex flex-col items-center"> 
               <h1 className="text-2xl font-bold">Expert Care</h1>
-              <h1 className="text-[#8d6969]">Meet Our Counseling Team at Serenity Minds</h1>
+              <h1 className="text-[#8d6969] text-center">Meet Our Counseling Team at Serenity Minds</h1>
             </div>
             <div className="flex flex-col items-center"> 
               <h1 className="text-4xl">12+</h1>
