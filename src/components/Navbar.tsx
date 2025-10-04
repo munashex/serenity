@@ -23,7 +23,7 @@ const toggleNav = () => setOpenNav(!openNav)
             </button>
 
             <div className="hidden lg:flex space-x-7 text-lg">
-             <Link to="/about" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">About</Link>
+            <Link to="/" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Home</Link> 
              <Link to="/services" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Services</Link> 
              <Link to="/blog" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Blog</Link>
             </div> 
