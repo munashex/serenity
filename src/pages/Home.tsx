@@ -246,7 +246,7 @@ const Home = () => {
            <div className="mt-16 text-center text-white space-y-7 lg:mt-36 bg-gradient-to-r py-7 lg:py-14 px-3 lg:px-14 rounded-xl from-[#f36551] to-[#f59a84]">
             <h1 className="text-2xl md:text-3xl">Serenity Minds</h1>
             <h1 className="text-2xl md:text-3xl lg:text-5xl lg:max-w-3xl mx-auto">Your journey to healing begins with one small step — reaching out.</h1>
-           <button className="default-btn mx-auto">Book an appointment</button>
+           <Link to="/appoinment" className="default-btn mx-auto w-fit">Book an appointment</Link>
            </div>
         </div>
     )

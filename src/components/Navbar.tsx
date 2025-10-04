@@ -11,7 +11,7 @@ const toggleNav = () => setOpenNav(!openNav)
     return (
         <div className="p-2 px-4 lg:px-16 md:mt-2">
          
-         <div className={`flex items-center justify-between ${openNav ? 'shadow-sm animate-fade-down shadow-[#8d6959] px-2 py-3': ''}`}>
+         <div className={`flex items-center justify-between ${openNav ? 'shadow-sm rounded-xl animate-fade-down shadow-[#8d6959] px-2 py-3': ''}`}>
             <Link to="/"> 
             <img src="/Log.svg" alt="serenity-Logo"  
             className="w-44 md:w-53"
@@ -35,11 +35,10 @@ const toggleNav = () => setOpenNav(!openNav)
          {openNav?  
          (
          
-            <div className="flex flex-col min-h-screen animate-fade-down shadow-lg shadow-[#8d6959] p-5 lg:hidden mt-7 items-center gap-y-3 text-lg">
+            <div className="flex flex-col min-h-screen  animate-fade-down shadow-lg shadow-[#8d6959] p-5 lg:hidden mt-7 items-center gap-y-3 text-lg">
             <Link onClick={toggleNav} to="/appointment" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Book an appointment</Link>
             <Link onClick={toggleNav} to="/" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Home Page</Link>
             <Link onClick={toggleNav} to="/services" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Services</Link> 
-            <Link onClick={toggleNav} to="/about" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">About</Link>
             <Link onClick={toggleNav} to="/blog" className="hover:text-[#8d6959] hover:border-b transition delay-200 duration-300">Blog</Link>
            
   

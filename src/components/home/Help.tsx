@@ -3,6 +3,7 @@ import { IoLeafSharp } from "react-icons/io5";
 import { FaStarOfLife } from "react-icons/fa";
 import { RiPsychotherapyFill } from "react-icons/ri";
 import { VscWorkspaceTrusted as Trust } from "react-icons/vsc";
+import { useLocation } from "react-router-dom";
 
 const services = [
   {
@@ -32,9 +33,12 @@ const services = [
 ];
 
 const Help = () => {
+
+const pathName = useLocation()
+
   return (
     <div className="mt-20 md:mt-24 lg:mt-40">
-      <div className="flex flex-col items-center gap-y-7 lg:flex-row lg:justify-between">
+      <div className={`flex flex-col items-center gap-y-7 lg:flex-row lg:justify-between ${pathName.pathname === '/services' ?  'hidden' : ''}`}>
         <div className="space-y-2 lg:space-y-3">
           <h1 className="text-3xl font-semibold text-center lg:text-start lg:text-5xl">
             How we help you heal
