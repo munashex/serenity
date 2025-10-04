@@ -33,6 +33,29 @@
     }
   ];
   
+  const otherServices = [
+    {
+      services: [
+        { name: "Therapy" },
+        { name: "Counseling" },
+        { name: "Wellness" },
+        { name: "Support" },
+        { name: "Coaching" },
+        { name: "Mindfulness" },
+        { name: "Crisis Care" },
+        { name: "Family Therapy" },
+        { name: "Couples Therapy" },
+        { name: "Teen Counseling" },
+      ],
+    },
+    {
+      data: [
+        { name: "300+", description: "Clients have taken the step toward emotional wellness." },
+        { name: "95%", description: "Notice improvement within 3 sessions completed." },
+        { name: "12%", description: "Team of professionals brings deep experience." },
+        { name: "1000%", description: "Virtual sessions delivered ensuring support is always available." },
+      ],
+    },
+  ];
   
-
-export  {secondSectionData}
+export  {secondSectionData, otherServices}

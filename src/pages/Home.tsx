@@ -12,7 +12,8 @@ import { FaHourglassStart } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
 import SecondSection from "../components/home/SecondSection";
 import Help from "../components/home/Help"; 
-import homeImage5 from '../images/home/homeImage5.avif'
+import homeImage5 from '../images/home/homeImage5.avif' 
+import OtherServices from "../components/home/OtherServices";
 
 const facesImages = [
     {image: face1, id: 1}, 
@@ -205,9 +206,9 @@ const Home = () => {
               <h1 className="text-3xl lg:text-5xl">What Makes Us Best</h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5   mt-16">
               {whatMakesBetter.map((item) => (
-                <div key={item.name} className={`bg-[#f3f4f6] flex flex-col items-center md:items-start p-3 py-8 shadow-sm  md:p-6 md:py-12 rounded-xl space-y-4 ${item.id === 2 ? 'lg:mt-16': ''}`}> 
+                <div key={item.name} className={`bg-[#f3f4f6] flex flex-col items-center md:items-start p-3 py-8 shadow-sm  md:p-6 md:py-12 rounded-xl space-y-4 ${item.id === 2 ? 'lg:mt-16 lg:h-full': ''}`}> 
                   <h1 className="text-[#e1937d]">{item.icon}</h1> 
                   <h1 className="text-xl">{item.name}</h1> 
                   <h1 className="text-[#8d6969] text-center md:text-start">{item.description}</h1>
@@ -217,6 +218,8 @@ const Home = () => {
 
           </div>
 
+          {/* explore other services section */}
+           <OtherServices/>
         </div>
     )
 }
