@@ -11,7 +11,8 @@ import { VscWorkspaceTrusted as Trust } from "react-icons/vsc";
 import { FaHourglassStart } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
 import SecondSection from "../components/home/SecondSection";
-import Help from "../components/home/Help";
+import Help from "../components/home/Help"; 
+import homeImage5 from '../images/home/homeImage5.avif'
 
 const facesImages = [
     {image: face1, id: 1}, 
@@ -24,7 +25,24 @@ const homeData = [
 {name: "Built on Trust", icon: <Trust size={20}/>},
 {name: "Start Your Healing Journey", icon: <FaHourglassStart size={20}/>}, 
 {name: "Heal", icon: <RiMentalHealthFill size={20}/>}
+]
 
+const whatMakesBetter = [
+  {
+  id: 1,
+  name: "You’ll Feel Heard and Understood", icon: <Mental size={30}/>, 
+  description: "Our counselors listen with care, creating a space where you can express yourself freely — without judgment or pressure."
+ }, 
+ {
+  id: 2,
+  name: "Safe, Non-Judgmental Environment", icon: <Trust size={30}/>, 
+  description: "From your first session onward, we help you uncover patterns, build resilience, and make steady, meaningful progress."
+ }, 
+ {
+id: 3,
+name: "Observe Real Progress with Real Change", icon: <FaHourglassStart size={30}/>, 
+description: "Investing in your mental health isn’t a luxury — it’s self-respect. You deserve the calm, clarity, and confidence that comes."
+ }
 ]
 
 const Home = () => {
@@ -150,6 +168,55 @@ const Home = () => {
 
           {/* help component */}
           <Help/>
+
+          <div className="mt-20 md:mt-24 gap-12 lg:mt-40 grid grid-cols-1 lg:grid-cols-2 bg-[#f8f3ec] lg:bg-white py-7 px-3 rounded-xl lg:px-14">
+           
+             <img src={homeImage5} alt="serenity-image5"  
+             className="w-full h-96 lg:h-[80%] object-cover rounded-xl"
+             />
+          
+           <div className="space-y-6 lg:space-y-9">
+             <h1 className="text-3xl lg:text-5xl">Steps toward mental, emotional peace</h1>
+            <h1 className="text-[#8d6969]">Personalized one-on-one sessions to help you manage anxiety, depression, stress, or life transitions in a safe, judgment-free space</h1>
+             
+             <div className="mt-12 flex flex-col lg:flex-row gap-7 mb-16">
+              <div className="space-y-1">
+               <h1 className="bg-white w-fit p-2 rounded-full"><Mental color="#e2957f" size={25}/></h1>
+               <h1 className="text-2xl">Therapy Session</h1>
+               <h1 className="text-[#8d6969]">walkthrough of what to expect in a typical therapy session Minds</h1>
+              </div> 
+
+              <div className="space-y-1">
+               <h1 className="bg-white w-fit p-2 rounded-full"><RiMentalHealthFill color="#e2957f" size={25}/></h1>
+               <h1 className="text-2xl">Observe Real Progress</h1>
+               <h1 className="text-[#8d6969]">When you arrive—either in person or virtually—you’ll be  environment.</h1>
+              </div> 
+              
+             </div> 
+             <Link to="/appoinment" className="default-btn w-fit">Book an appointment</Link>
+           </div>
+      
+          </div> 
+
+          {/* What Makes Us Best section */}
+          <div className="mt-20 lg:mt-0">
+            <div className="flex flex-col items-center gap-4">
+              <h1 className="bg-[#f1d1c6] w-fit p-2 px-2 rounded-full font-bold">Why It’s Worth It</h1>
+              <h1 className="text-3xl lg:text-5xl">What Makes Us Best</h1>
+            </div>
+
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-16">
+              {whatMakesBetter.map((item) => (
+                <div key={item.name} className={`bg-[#f3f4f6] flex flex-col items-center md:items-start p-3 py-8 shadow-sm  md:p-6 md:py-12 rounded-xl space-y-4 ${item.id === 2 ? 'lg:mt-16': ''}`}> 
+                  <h1 className="text-[#e1937d]">{item.icon}</h1> 
+                  <h1 className="text-xl">{item.name}</h1> 
+                  <h1 className="text-[#8d6969] text-center md:text-start">{item.description}</h1>
+                </div>
+              ))}
+            </div>
+
+          </div>
+
         </div>
     )
 }

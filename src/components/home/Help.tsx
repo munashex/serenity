@@ -48,7 +48,7 @@ const Help = () => {
             <h1 className="text-[#e1937d]">{item.icon}</h1>
             <h1 className="text-2xl font-bold lg:text-3xl">{item.name}</h1>
           </div>
-          <h1 className="text-[#8d6969] lg:max-w-xl lg:text-lg">{item.description}</h1>
+          <h1 className="text-[#8d6969] lg:max-w-xl">{item.description}</h1>
         </div>
          ))}
          </div>
