@@ -14,6 +14,11 @@ import SecondSection from "../components/home/SecondSection";
 import Help from "../components/home/Help"; 
 import homeImage5 from '../images/home/homeImage5.avif' 
 import OtherServices from "../components/home/OtherServices";
+import inside1 from '../images/home/inside1.avif' 
+import inside2 from '../images/home/inside2.avif'
+import inside3 from '../images/home/inside3.avif'
+import inside4 from '../images/home/inside4.avif'
+import inside5 from '../images/home/inside5.avif'
 
 const facesImages = [
     {image: face1, id: 1}, 
@@ -220,6 +225,29 @@ const Home = () => {
 
           {/* explore other services section */}
            <OtherServices/>
+
+           {/* inside Serenity Minds */} 
+           <div className="mt-20 lg:mt-36">
+           <div className="flex flex-col  gap-4">
+            <h1 className="bg-[#f1d1c6] w-fit p-2 px-2 rounded-full font-bold">Why It’s Worth It</h1>
+            <h1 className="text-3xl lg:text-5xl">Inside Serenity Minds</h1>
+            </div>
+
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-5">
+               <img src={inside1} alt="serenity" className="md:col-span-2 rounded-xl h-full object-cover"/>
+               <img src={inside2} alt="serenity" className="rounded-xl h-full object-cover"/>
+               <img src={inside3} alt="serenity" className="rounded-xl h-full object-cover"/>
+               <img src={inside4} alt="serenity" className="rounded-xl h-full object-cover"/>
+               <img src={inside5} alt="serenity" className="rounded-xl h-full object-cover"/>
+            </div>
+           </div>
+
+           {/* reach out section  */} 
+           <div className="mt-16 text-center text-white space-y-7 lg:mt-36 bg-gradient-to-r py-7 lg:py-14 px-3 lg:px-14 rounded-xl from-[#f36551] to-[#f59a84]">
+            <h1 className="text-2xl md:text-3xl">Serenity Minds</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl lg:max-w-3xl mx-auto">Your journey to healing begins with one small step — reaching out.</h1>
+           <button className="default-btn mx-auto">Book an appointment</button>
+           </div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ const OtherServices = () => {
 
 
     return (
-        <div className="mt-20 lg:mt-44 bg-[#f8f3ec] px-3 py-7 rounded-xl lg:py-16 lg:px-16">
+        <div className="mt-20  lg:mt-44 bg-[#f8f3ec] px-3 py-7 rounded-xl lg:py-16 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-y-5 items-center justify-between">
         <h1 className="text-2xl lg:text-4xl lg:max-w-2xl text-center lg:text-start">Explore our core services and discover the right support.</h1>
         <Link
