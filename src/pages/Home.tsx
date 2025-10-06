@@ -1,5 +1,4 @@
 import { FaStar } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import face1 from '../images/home/face1.avif' 
 import face2 from '../images/home/face2.avif'
 import face3 from '../images/home/face3.avif' 
@@ -66,7 +65,7 @@ const Home = () => {
            
            <h1 className="text-3xl font-bold text-center">You Deserve to Feel Better. Peace Begins with Us</h1>
            <h1 className="text-[#8d6969] text-center">We offer compassionate and personalized mental health support to guide life’s challenges.</h1>
-          <Link to="/appointment" className="default-btn">Book an appointment</Link>
+          <a href="mailto:munashemugondaa@gamil.com" className="default-btn">Book an appointment</a>
           
            <div className="flex mt-8">
             {facesImages.map((face) => (
@@ -117,7 +116,7 @@ const Home = () => {
            
            <h1 className="text-5xl font-bold  max-w-xl">You Deserve to Feel Better. Peace Begins with Us</h1>
            <h1 className="text-[#8d6969] max-w-lg">We offer compassionate and personalized mental health support to guide life’s challenges.</h1>
-          <Link to="/appointment" className="default-btn w-fit">Book an appointment</Link>
+          <a href="mailto:munashemugondaa@gamil.com" className="default-btn w-fit">Book an appointment</a>
           
            <div className="flex mt-8">
             {facesImages.map((face) => (
@@ -199,7 +198,7 @@ const Home = () => {
               </div> 
               
              </div> 
-             <Link to="/appoinment" className="default-btn w-fit">Book an appointment</Link>
+             <a href="mailto:munashemugondaa@gamil.com" className="default-btn w-fit">Book an appointment</a>
            </div>
       
           </div> 
@@ -246,7 +245,7 @@ const Home = () => {
            <div className="mt-16 text-center text-white space-y-7 lg:mt-36 bg-gradient-to-r py-7 lg:py-14 px-3 lg:px-14 rounded-xl from-[#f36551] to-[#f59a84]">
             <h1 className="text-2xl md:text-3xl">Serenity Minds</h1>
             <h1 className="text-2xl md:text-3xl lg:text-5xl lg:max-w-3xl mx-auto">Your journey to healing begins with one small step — reaching out.</h1>
-           <Link to="/appoinment" className="default-btn mx-auto w-fit">Book an appointment</Link>
+           <a href="mailto:munashemugondaa@gamil.com" className="default-btn mx-auto w-fit">Book an appointment</a>
            </div>
         </div>
     )

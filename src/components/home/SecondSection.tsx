@@ -1,6 +1,5 @@
 import homeImage3 from '../../images/home/homeImage3.avif'
 import { GoArrowUpRight as Arrow } from "react-icons/go";
-import { Link } from 'react-router-dom';
 import { FaHourglassStart } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
 import { TbBulb as Bulb } from "react-icons/tb";
@@ -46,12 +45,12 @@ const SecondSection = () => {
               alt="serenity-homeImage"
               className="mx-auto object-cover w-full"
             />
-            <Link
-              to="/appointment"
+            <a
+             href="mailto:munashemugondaa@gamil.com"
               className="absolute top-6 right-10 bg-white p-3 rounded-full transition delay-300 duration-500 hover:scale-110 hover:rotate-45 hover:bg-[#e1937d]"
             >
               <Arrow size={30} />
-            </Link>
+            </a>
             <div className="absolute bottom-5 left-7 flex flex-wrap gap-4">
               {homeData.map((item) => (
                 <div

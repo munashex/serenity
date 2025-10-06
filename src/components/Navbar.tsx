@@ -54,21 +54,20 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <Link to="/appointment" className="hidden lg:flex default-btn">
+        <a href="mailto:munashemugondaa@gamil.com"  className="hidden lg:flex default-btn">
           Book an appointment
-        </Link>
+        </a>
       </div>
 
       {/* Mobile Nav */}
       {openNav ? (
         <div className="flex flex-col min-h-screen animate-fade-down shadow-lg shadow-[#8d6959] p-5 lg:hidden mt-7 items-center gap-y-3 text-lg">
-          <Link
-            onClick={toggleNav}
-            to="/appointment"
+          <a
+           href="mailto:munashemugondaa@gamil.com"
             className="relative text-[#5c453a] hover:text-[#8d6959] transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[2px] after:bg-[#8d6959] hover:after:w-full after:transition-all after:duration-300"
           >
             Book an appointment
-          </Link>
+          </a>
           <Link
             onClick={toggleNav}
             to="/"
@@ -91,9 +90,8 @@ const Navbar = () => {
             Blog
           </Link>
 
-          <Link
-            onClick={toggleNav}
-            to="/appointment"
+          <a
+            href="mailto:munashemugondaa@gamil.com"
             className="relative mt-5 hover:scale-95 transition delay-200 duration-500"
           >
             <img
@@ -106,7 +104,7 @@ const Navbar = () => {
               </h1>
               <h1 className="text-center">Book your free meeting today</h1>
             </div>
-          </Link>
+          </a>
         </div>
       ) : null}
     </div>
