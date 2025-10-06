@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar"
 import Services from "./pages/Services" 
 import Blogs from "./pages/Blogs"
 import Blog from "./pages/Blog"
-import NotFound from "./pages/NotFound"
+import NotFound from "./pages/NotFound" 
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/blog/:id" element={<Blog/>}/> 
           <Route path="*" element={<NotFound/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   )
