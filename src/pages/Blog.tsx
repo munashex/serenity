@@ -70,7 +70,7 @@ if(!blogData) {
                         </div>
 
                         <div className="space-y-2"> 
-                            <div className="flex flex-row gap-4">
+                            <div className="flex flex-row gap-4 items-center flex-wrap">
                                 {blog.category.map((cat, index) => (
                                     <h1 
                                         className={
