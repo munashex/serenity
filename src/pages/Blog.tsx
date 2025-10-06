@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom" 
 import { blog } from "../data/blog"
 import { Link } from "react-router-dom"
+import NotFound from "./NotFound"
 
 const Blog = () => {
 const {id} = useParams() 
@@ -10,6 +11,12 @@ const relatedBlog = blog.filter((item) => item.id !== Number(id))
 
 const scrollToTop = () => {
   window.scrollTo({behavior: "smooth", top: 0})
+}
+
+if(!blogData) {
+  return (
+    <NotFound/>
+  )
 }
 
     return (

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Services from "./pages/Services" 
 import Blogs from "./pages/Blogs"
 import Blog from "./pages/Blog"
+import NotFound from "./pages/NotFound"
 
 const App = () => {
 
@@ -15,7 +16,8 @@ const App = () => {
           <Route path="/" element={<Home/>}/> 
           <Route path="/services" element={<Services/>}/> 
           <Route path="/blog" element={<Blogs/>}/> 
-          <Route path="/blog/:id" element={<Blog/>}/>
+          <Route path="/blog/:id" element={<Blog/>}/> 
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>
     </div>

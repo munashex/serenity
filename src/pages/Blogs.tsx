@@ -3,6 +3,10 @@ import { Link } from "react-router-dom"
 
 const Blogs = () => {
 
+    const scrollToTop = () => {
+        window.scrollTo({behavior: "smooth", top: 0})
+      }
+
     return (
         <div className="px-3 mt-12 lg:px-16">
             <div className="bg-[#f8f3ec] rounded-xl py-7 space-y-3 text-center lg:py-14 px-3 lg:px-14">
@@ -13,7 +17,7 @@ const Blogs = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-11 lg:gap-16 mt-20">
                 {blog.map((blog) => (
-                    <Link to={`/blog/${blog.id}`} key={blog.id} className="space-y-8"> 
+                    <Link to={`/blog/${blog.id}`} onClick={scrollToTop} key={blog.id} className="space-y-8"> 
                         
                         <div className="overflow-hidden rounded-xl">
                             <img 
